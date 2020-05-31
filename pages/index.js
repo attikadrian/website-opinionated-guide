@@ -5,6 +5,7 @@ import Name from "../components/text";
 import CheckMark from "../components/checkmark";
 import FAQ from "../components/FAQ";
 import Footer from "../components/footer";
+import Button from "../components/button";
 
 export async function getServerSideProps({ req }) {
   const ip = req.headers["x-real-ip"] || req.connection.remoteAddress;
@@ -102,14 +103,7 @@ export default function Index({ location }) {
                         </p>
                       </li>
                     </ul>
-                    <div className="mt-6 rounded-md shadow">
-                      <a
-                        href="#"
-                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                      >
-                        Get the book pack
-                      </a>
-                    </div>
+                    <Button>Get the book pack</Button>
                   </div>
                 </div>
                 <div className="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0">
@@ -148,14 +142,7 @@ export default function Index({ location }) {
                         </p>
                       </li>
                     </ul>
-                    <div className="mt-6 rounded-md shadow">
-                      <a
-                        href="#"
-                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-                      >
-                        Get the super opinionated pack
-                      </a>
-                    </div>
+                    <Button>Get the super opinionated pack</Button>
                   </div>
                 </div>
               </div>
