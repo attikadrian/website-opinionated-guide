@@ -11,11 +11,7 @@ import prices from "../components/data/prices.json";
 
 export async function getServerSideProps({ req }) {
   const ip = req.headers["x-real-ip"] || req.connection.remoteAddress;
-  let country = {
-    twoLetterCode: "DE",
-    threeLetterCode: "MEX",
-    countryName: "Mexico",
-  };
+  let country = {};
   try {
     const { data } = await axios(`http://ip2c.org/${ip}`);
     const parsed = data.split("1;")[1].split(";");
@@ -24,6 +20,8 @@ export async function getServerSideProps({ req }) {
       threeLetterCode: parsed[1],
       countryName: parsed[2],
     };
+
+    console.log(country);
   } catch (e) {}
   const userLocation = prices.find(
     (price) => price.countryCode === country.threeLetterCode
