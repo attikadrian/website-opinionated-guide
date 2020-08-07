@@ -10,7 +10,10 @@ import Chapters from "../components/chapters";
 import prices from "../components/data/prices.json";
 
 export async function getServerSideProps({ req }) {
-  const ip = req.headers["x-real-ip"] || req.connection.remoteAddress;
+  const ip =
+    req.headers["x-real-ip"] ||
+    req.headers["x-forwarded-for"] ||
+    req.connection.remoteAddress;
   let country = {};
   try {
     const { data } = await axios(`http://ip2c.org/${ip}`);
