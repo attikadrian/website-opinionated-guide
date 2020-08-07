@@ -16,7 +16,7 @@ export async function getServerSideProps({ req }) {
     req.connection.remoteAddress;
   let country = {};
   try {
-    const { data } = await axios(`http://ip2c.org/${ip}`);
+    const { data } = await axios(`http://api.ip2c.info/json/${ip}`);
     const parsed = data.split("1;")[1].split(";");
     country = {
       twoLetterCode: parsed[0],
