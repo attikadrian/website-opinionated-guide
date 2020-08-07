@@ -11,7 +11,6 @@ import prices from "../components/data/prices.json";
 
 export async function getServerSideProps({ req }) {
   const ip =
-    "95.90.244.126" ||
     req.headers["x-real-ip"] ||
     req.headers["x-forwarded-for"] ||
     req.connection.remoteAddress;
