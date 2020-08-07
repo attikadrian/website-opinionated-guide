@@ -22,7 +22,9 @@ export async function getServerSideProps({ req }) {
     };
 
     console.log(country);
-  } catch (e) {}
+  } catch (e) {
+    console.log(e);
+  }
   const userLocation = prices.find(
     (price) => price.countryCode === country.threeLetterCode
   );
