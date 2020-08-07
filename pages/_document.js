@@ -11,6 +11,7 @@ class MyDocument extends Document {
       <Html>
         <Head />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
+        <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
         <body>
           <Main />
           <NextScript />

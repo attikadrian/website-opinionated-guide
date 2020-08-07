@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Astronaut from "../components/austronaut";
 import Name from "../components/text";
@@ -6,45 +6,184 @@ import CheckMark from "../components/checkmark";
 import FAQ from "../components/FAQ";
 import Footer from "../components/footer";
 import Button from "../components/button";
+import Chapters from "../components/chapters";
+import prices from "../components/data/prices.json";
 
 export async function getServerSideProps({ req }) {
   const ip = req.headers["x-real-ip"] || req.connection.remoteAddress;
+  let country = {
+    twoLetterCode: "DE",
+    threeLetterCode: "MEX",
+    countryName: "Mexico",
+  };
   try {
     const { data } = await axios(`http://ip2c.org/${ip}`);
     const parsed = data.split("1;")[1].split(";");
-
-    return {
-      props: {
-        location: {
-          twoLetterCode: parsed[0],
-          threeLetterCode: parsed[1],
-          countryName: parsed[2],
-        },
-      },
+    country = {
+      twoLetterCode: parsed[0],
+      threeLetterCode: parsed[1],
+      countryName: parsed[2],
     };
-  } catch (e) {
+  } catch (e) {}
+  const userLocation = prices.find(
+    (price) => price.countryCode === country.threeLetterCode
+  );
+
+  if (userLocation) {
+    const discount = userLocation.discount - 10;
     return {
       props: {
-        location: {
-          twoLetterCode: "DE",
-          threeLetterCode: "DEU",
-          countryName: "Germany",
-        },
+        discount,
+        country,
       },
     };
   }
+
+  return {
+    props: {},
+  };
 }
 
-export default function Index({ location }) {
-  console.log(location);
+const openBookCheckout = () => {
+  window.Paddle.Checkout.open({ product: 595964 });
+};
+
+export default function Index({ discount, country }) {
+  const [showBanner] = useState(Boolean(discount));
   return (
     <>
+      {showBanner && (
+        <div class="relative bg-indigo-600">
+          <div class="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+            <div class="pr-16 sm:text-center sm:px-16">
+              <p class="font-medium text-white">
+                Hey! I noticed you are visiting from {country.countryName} and
+                this may be a bit too much money. <br />I support Parity
+                Purchasing Power and if you need it you can use the code{" "}
+                <span class="text-white font-bold underline">
+                  ILOVE{country.countryName.split(" ").join("").toUpperCase()}
+                </span>{" "}
+                for a {discount}% discount.
+              </p>
+            </div>
+            <div class="absolute inset-y-0 right-0 pt-1 pr-1 flex items-start sm:pt-1 sm:pr-2 sm:items-start">
+              <button
+                type="button"
+                class="flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 transition ease-in-out duration-150"
+                aria-label="Dismiss"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="lol-wrapper">
         <div className="lol">
           <Astronaut />
           <Name />
         </div>
       </div>
+      <div class="py-12 bg-gray-900">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
+          <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+            <div>
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                <svg
+                  class="h-6 w-6"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                  />
+                </svg>
+              </div>
+              <div class="mt-5">
+                <h5 class="text-lg leading-6 font-medium text-white">
+                  Competitive exchange rates
+                </h5>
+                <p class="mt-2 text-base leading-6 text-gray-400">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maiores impedit perferendis suscipit eaque, iste dolor
+                  cupiditate blanditiis ratione.
+                </p>
+              </div>
+            </div>
+            <div class="mt-10 lg:mt-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                <svg
+                  class="h-6 w-6"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
+                  />
+                </svg>
+              </div>
+              <div class="mt-5">
+                <h5 class="text-lg leading-6 font-medium text-white">
+                  No hidden fees
+                </h5>
+                <p class="mt-2 text-base leading-6 text-gray-400">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maiores impedit perferendis suscipit eaque, iste dolor
+                  cupiditate blanditiis ratione.
+                </p>
+              </div>
+            </div>
+            <div class="mt-10 lg:mt-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                <svg
+                  class="h-6 w-6"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <div class="mt-5">
+                <h5 class="text-lg leading-6 font-medium text-white">
+                  Transfers are instant
+                </h5>
+                <p class="mt-2 text-base leading-6 text-gray-400">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maiores impedit perferendis suscipit eaque, iste dolor
+                  cupiditate blanditiis ratione.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Chapters />
       <div className="bg-gray-900">
         <div className="pt-12 sm:pt-16 lg:pt-24">
           <div className="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -70,7 +209,7 @@ export default function Index({ location }) {
                 <div className="rounded-lg shadow-lg overflow-hidden">
                   <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                     <div className="mt-4 flex items-baseline text-6xl leading-none font-extrabold">
-                      $40
+                      $30
                     </div>
                     <p className="mt-5 text-lg leading-7 text-gray-500">
                       The book pack
@@ -103,13 +242,15 @@ export default function Index({ location }) {
                         </p>
                       </li>
                     </ul>
-                    <Button>Get the book pack</Button>
+                    <Button onClick={openBookCheckout}>
+                      Get the book pack
+                    </Button>
                   </div>
                 </div>
                 <div className="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0">
                   <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                     <div className="mt-4 flex items-baseline text-6xl leading-none font-extrabold">
-                      $80
+                      $60
                     </div>
                     <p className="mt-5 text-lg leading-7 text-gray-500">
                       The super opinionated pack
