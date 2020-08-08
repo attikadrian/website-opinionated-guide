@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Parallax } from "react-scroll-parallax";
 import axios from "axios";
 import Astronaut from "../components/austronaut";
 import Name from "../components/text";
@@ -52,13 +53,18 @@ export async function getServerSideProps({ req }) {
 
 export default function Index({ discount, country }) {
   const [showBanner] = useState(Boolean(discount));
+
   return (
     <>
       <Banner show={showBanner} country={country} discount={discount} />
       <div className="hero-wrapper">
         <div className="hero">
-          <Astronaut />
-          <Name />
+          <Parallax y={[-20, 20]} tagOuter="figure">
+            <Astronaut />
+          </Parallax>
+          <Parallax y={[-60, 20]} tagOuter="figure">
+            <Name />
+          </Parallax>
         </div>
       </div>
       <Features />

@@ -11,12 +11,13 @@
     "@tailwindcss/ui": "^0.3.0",
     "axios": "^0.19.2",
     "next": "^9.4.4",
-    "next-on-netlify": "^2.3.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-scroll-parallax": "^2.3.4"
   },
   "devDependencies": {
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.4.6",
+    "next-on-netlify": "^2.3.2"
   }
 }
