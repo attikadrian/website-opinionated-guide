@@ -24,7 +24,7 @@ export async function getServerSideProps({ req }) {
       countryName: parsed.Country,
     };
 
-    console.log(country);
+    console.log(parsed);
   } catch (e) {
     console.log(e);
   }
@@ -187,6 +187,79 @@ export default function Index({ discount, country }) {
         </div>
       </div>
       <Chapters />
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+            Testimonials
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-white">
+            Some people read the book and did not mind being on the website as
+            marketing!
+          </p>
+        </div>
+        <div className="container px-5 py-24 mx-auto max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-5">
+          <div class="py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+            <div class="flex justify-center md:justify-end -mt-16">
+              <img
+                alt="Tomasz Łakomy"
+                class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                src="https://pbs.twimg.com/profile_images/1251913970660843520/hyH5ML2H_400x400.jpg"
+              />
+            </div>
+            <div>
+              <h2 class="text-gray-800 text-3xl font-semibold">
+                Tomasz Łakomy
+              </h2>
+              <p class="mt-2 text-gray-600">“The fuck did I just read”</p>
+            </div>
+          </div>
+          <div class="py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+            <div class="flex justify-center md:justify-end -mt-16">
+              <img
+                alt="Tomasz Łakomy"
+                class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                src="https://pbs.twimg.com/profile_images/1251913970660843520/hyH5ML2H_400x400.jpg"
+              />
+            </div>
+            <div>
+              <h2 class="text-gray-800 text-3xl font-semibold">
+                Tomasz Łakomy
+              </h2>
+              <p class="mt-2 text-gray-600">“The fuck did I just read”</p>
+            </div>
+          </div>
+          <div class="py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+            <div class="flex justify-center md:justify-end -mt-16">
+              <img
+                alt="Tomasz Łakomy"
+                class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                src="https://pbs.twimg.com/profile_images/1251913970660843520/hyH5ML2H_400x400.jpg"
+              />
+            </div>
+            <div>
+              <h2 class="text-gray-800 text-3xl font-semibold">
+                Tomasz Łakomy
+              </h2>
+              <p class="mt-2 text-gray-600">“The fuck did I just read”</p>
+            </div>
+          </div>
+          <div class="py-4 px-8 bg-white shadow-lg rounded-lg my-20">
+            <div class="flex justify-center md:justify-end -mt-16">
+              <img
+                alt="Tomasz Łakomy"
+                class="w-20 h-20 object-cover rounded-full border-2 border-indigo-500"
+                src="https://pbs.twimg.com/profile_images/1251913970660843520/hyH5ML2H_400x400.jpg"
+              />
+            </div>
+            <div>
+              <h2 class="text-gray-800 text-3xl font-semibold">
+                Tomasz Łakomy
+              </h2>
+              <p class="mt-2 text-gray-600">“The fuck did I just read”</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="bg-gray-900">
         <div className="pt-12 sm:pt-16 lg:pt-24">
           <div className="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
@@ -274,7 +347,7 @@ export default function Index({ discount, country }) {
                           <CheckMark />
                         </div>
                         <p className="ml-3 text-base leading-6 text-gray-700">
-                          More excercises and code examples
+                          More exercises and code examples
                         </p>
                       </li>
                       <li className="mt-4 flex items-start">
@@ -286,7 +359,7 @@ export default function Index({ discount, country }) {
                         </p>
                       </li>
                     </ul>
-                    <Button>Get the super opinionated pack</Button>
+                    <Button>Let me know when this launches</Button>
                   </div>
                 </div>
               </div>
