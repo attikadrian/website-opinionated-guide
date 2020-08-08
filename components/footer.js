@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => (
   <div class="bg-gray-50">
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
@@ -25,10 +27,13 @@ const Footer = () => (
           </svg>
         </a>
       </div>
-      <div class="mt-8 md:mt-0 md:order-1">
+      <div class="mt-8 md:mt-0 md:order-1 flex">
         <p class="text-center text-base leading-6 text-gray-400">
           &copy; {new Date().getFullYear()} Sara Andreia Vieira
         </p>
+        <Link href="/legal">
+          <a className="ml-4 text-base text-gray-400 underline">Legal</a>
+        </Link>
       </div>
     </div>
   </div>

@@ -105,7 +105,14 @@ const Buy = () => {
                       </p>
                     </li>
                   </ul>
-                  <Button>Let me know when this launches</Button>
+                  <Button>
+                    <a
+                      data-formkit-toggle="c358896839"
+                      href="https://colossal-artist-8004.ck.page/c358896839"
+                    >
+                      Let me know when this launches
+                    </a>
+                  </Button>
                 </div>
               </div>
             </div>

@@ -32,6 +32,11 @@ class MyDocument extends Document {
         <meta name="theme-color" content="#100613" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
         <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+        <script
+          async
+          data-uid="c358896839"
+          src="https://colossal-artist-8004.ck.page/c358896839/index.js"
+        ></script>
         <body>
           <Main />
           <NextScript />
