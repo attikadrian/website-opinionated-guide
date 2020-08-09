@@ -12,15 +12,12 @@ const Buy = () => {
       <div className="pt-12 sm:pt-16 lg:pt-24">
         <div className="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto lg:max-w-none">
-            <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
+            <h2 className="mt-2 text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
               Pricing
             </h2>
-            <p className="mt-2 text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
-              The right price for you, whoever you are
-            </p>
             <p className="mt-2 text-xl leading-7 text-gray-300">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
-              sequi unde repudiandae natus.
+              Rent is expensive in a major city and the berlin winters are
+              pretty harsh.
             </p>
           </div>
         </div>

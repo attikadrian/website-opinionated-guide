@@ -1,15 +1,20 @@
 const chapters = [
   {
     name: "The Book",
+    desc: "What is this I am reading? What will it teach me?",
   },
   {
     name: "About the author",
+    desc: "Sara? Who?",
   },
   {
     name: "What will you learn?",
+    desc: "Let's get all the cards in the table",
   },
   {
     name: "Folder/ File Structuring",
+    desc:
+      "An app has a LOT of files so let's talk about knowing where stuff is",
     children: [
       "Folder",
       "File naming",
@@ -20,6 +25,7 @@ const chapters = [
   },
   {
     name: "State Management: Oh, all the options",
+    desc: "You don't always need a library, how can react help?",
     children: [
       "Using useState",
       "Global State with Context",
@@ -28,10 +34,13 @@ const chapters = [
   },
   {
     name: "Project Starters",
+    desc:
+      "No more need to mess with webpack, let's look at some project starters",
     children: ["Create React App", "Next", "Gatsby"],
   },
   {
     name: "Packages",
+    desc: "Many packages, much confusion",
     children: [
       "Routing",
       "State Management",
@@ -47,6 +56,7 @@ const chapters = [
   },
   {
     name: "The Hooks",
+    desc: "Hooks are cool but do they make sense? I hope they do after this",
     children: [
       "useEffect",
       "useLayoutEffect",
@@ -55,14 +65,19 @@ const chapters = [
       "useRef",
       "useCallback",
       "useMemo",
+      "Create your own hook",
     ],
   },
   {
     name: "Deployments",
+    desc: "Put your marvelous creation on the interwebs",
     children: ["Netlify", "Vercel"],
   },
-  { name: "The Lingo Glossary" },
-  { name: "Conclusion" },
+  {
+    name: "The Lingo Glossary",
+    desc: "Sometimes people say things and I don't know what they mean",
+  },
+  { name: "Conclusion", desc: "Mostly me telling you to be a decent human" },
 ];
 
 const Chapters = () => {
@@ -75,9 +90,8 @@ const Chapters = () => {
           </h1>
 
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them.
+            There are 11 chapters and many smaller subchapters in this book.
+            Let's talk about them
           </p>
         </div>
         <div class="flex flex-wrap -m-2">
@@ -88,7 +102,7 @@ const Chapters = () => {
                   <h2 class="text-white title-font font-medium">
                     {chapter.name}
                   </h2>
-                  <p class="text-gray-400">UI Designer</p>
+                  <p class="text-gray-400">{chapter.desc}</p>
                 </div>
               </div>
             </div>

@@ -1,7 +1,17 @@
 const testimonials = [
   {
     name: "Tomasz Łakomy",
-    text: "The fuck did I just read?",
+    text: `
+    "Every React app consists of answers for tens of questions: "what do we use for state management? Styles? Fetching data? Animation? Cache? Testing? What are we even doing?".
+  <br/>  <br/>
+    
+    Navigating the React ecosystem is anything but simple and having a guide who'll help you avoid getting lost is absolutely priceless. 
+    <br/>  <br/>
+    That's where Sara and her books come in - "The Opinionated Guide To React" is years of trial & error of trying different solutions for common problems in React apps and finding out which solved her problems and are more than likely to solve yours. She went through it all so <b>you don't have to</b>.
+    <br/>  <br/>
+    I've been writing React for a living since 2016 and Sara's book taught me a lot. Every page is filled with her wit and sense of humour which makes the whole book a joy to read.
+    <br/>  <br/>
+    My only criticism is that it wasn't written sooner as I'd absolutely love to read it years ago. It's definitely worth your time and I cannot recommend it enough."`,
     link: "https://twitter.com/tlakomy",
     job: "Senior developer, OLX",
     pic:
@@ -25,9 +35,10 @@ const Testimonials = () => (
         <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="relative">
             <blockquote class="mt-8">
-              <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-50 ">
-                <p>{testimonial.text}</p>
-              </div>
+              <div
+                class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-50"
+                dangerouslySetInnerHTML={{ __html: testimonial.text }}
+              ></div>
               <footer class="mt-8">
                 <div class="md:flex md:items-center md:justify-center">
                   <div class="md:flex-shrink-0">
