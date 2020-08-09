@@ -124,19 +124,38 @@ const Buy = () => {
                 About the author
               </h2>
             </div>
-            <div className="mt-8 flex gap-8">
+            <div className="mt-12 flex gap-8 justify-center">
               <img
                 src="/gayme.jpeg"
                 alt="me"
                 className="rounded"
                 style={{ width: 350 }}
               />
-              <p>
-                I am a poo, a 28 year old poo.
+              <p style={{ maxWidth: 600 }}>
+                Sara Vieira is a developer at CodeSandbox. GraphQL an OpenSource
+                enthusiast by day, football aficionado at night. Her experience
+                and cat-like curiosity have taken her to build stuff with all
+                sorts of frontend technologies that range from PHP and NodeJS to
+                Vue and Reason, but since 2016, she has focused the majority of
+                her projects in React.
                 <br />
-                An old poo you might say or a young poo.
-                <br />I like to do what any poo likes to do: long walks on the
-                beach
+                <br />
+                As a self-taught programmer, Sara advocates for the importance
+                of learning by building dumb (or not so dumb) shit that can make
+                people smile, as well as to give back to the community by
+                sharing what you learn with others.
+                <br />
+                <br />
+                Actively involved in the frontend community as a conference
+                speaker, Sara is also the founder of QueerJS, a series of small
+                community meetups where everybody is welcomed, but it's queer
+                speakers that take the stage.
+                <br />
+                <br />
+                Her talents include banging sticks into a drum kit and saying
+                the wrong thing at the wrong time. You may find her having
+                coffee in the streets of Berlin while talking about terrible
+                horror movies, airports and TypeScript.
               </p>
             </div>
           </div>
