@@ -6,8 +6,9 @@ const Banner = ({ show, country, discount }) => {
         <div class="pr-16 sm:text-center sm:px-16">
           {isPortugal ? (
             <p class="font-medium text-white">
-              Hey! Tuga! Eu sei bem quanto é que as empresas pagam ai. Se
-              quiseres usa o código
+              Hey! Tuga! <br />
+              Eu sei bem quanto é que as empresas pagam ai. Se quiseres usa o
+              código {""}
               <span class="text-white font-bold underline">
                 VIVAORONALDO
               </span>{" "}
