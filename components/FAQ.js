@@ -13,7 +13,7 @@ const data = [
   },
   {
     question: " Can I get a discount if I am student?",
-    answer: "Sure! Please fill in this form and I will get back to you.",
+    answer: `Sure! Please fill in <a  class="underline" href="https://docs.google.com/forms/d/e/1FAIpQLSfT8XLlLVWclAYXFxEbGF2Ap5JJaqjY2eWz-L6QqlY7WVRpRQ/viewform?usp=sf_link">this form</a> and I will get back to you.`,
   },
   {
     question: " Can I get VAT discounted?",
