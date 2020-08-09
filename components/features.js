@@ -25,7 +25,7 @@ const Features = () => (
           <div class="mt-5">
             <h5 class="text-lg leading-6 font-medium text-white">+180 pages</h5>
             <p class="mt-2 text-base leading-6 text-gray-400">
-              More than 180 pages filled with content and opinions.
+              More than 180 pages of React recipes.
             </p>
           </div>
         </div>
