@@ -23,9 +23,13 @@ const Features = () => (
             </svg>
           </div>
           <div class="mt-5">
-            <h5 class="text-lg leading-6 font-medium text-white">+180 pages</h5>
+            <h5 class="text-lg leading-6 font-medium text-white">
+              190 pages of React Recipes
+            </h5>
             <p class="mt-2 text-base leading-6 text-gray-400">
-              More than 180 pages of React recipes.
+              This book is my personal map of the tips, power-ups and
+              not-so-obvious solutions to common questions and problems that
+              I've come across during 4 year of React development.
             </p>
           </div>
         </div>
@@ -46,12 +50,13 @@ const Features = () => (
           </div>
           <div class="mt-5">
             <h5 class="text-lg leading-6 font-medium text-white">
-              Dozens of code examples
+              Step-by-step code examples
             </h5>
             <p class="mt-2 text-base leading-6 text-gray-400">
-              Plenty of code examples all hosted on{" "}
+              Every recipe comes with companion code examples that walk you
+              through common React cross-roads. All the examples are hosted on
               <a href="https://codesandbox.io">CodeSandbox</a> so that you can
-              edit and play around with.
+              edit and play around with them.
             </p>
           </div>
         </div>

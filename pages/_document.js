@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head />
         <title>Opinionated Guide to React</title>
         <link
@@ -37,6 +37,12 @@ class MyDocument extends Document {
           data-uid="c358896839"
           src="https://colossal-artist-8004.ck.page/c358896839/index.js"
         ></script>
+        <meta
+          name="description"
+          content="This book is my personal map of the tips, power-ups and
+          not-so-obvious solutions to common questions and problems that
+          I've come across during 4 year of React development."
+        />
         <body>
           <Main />
           <NextScript />
