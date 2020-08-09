@@ -1,5 +1,5 @@
 const Banner = ({ show, country, discount }) => {
-  const isPortugal = country.threeLetterCode === "PRT";
+  const isPortugal = country && country.threeLetterCode === "PRT";
   return show ? (
     <div class="relative bg-indigo-600">
       <div class="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
