@@ -116,6 +116,32 @@ const Buy = () => {
           </div>
         </div>
       </div>
+      <div className="bg-gray-50">
+        <div className="pt-12 sm:pt-16 lg:pt-24">
+          <div className="max-w-screen-xl mx-auto  px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto lg:max-w-none">
+              <h2 className="mt-2 text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none text-center">
+                About the author
+              </h2>
+            </div>
+            <div className="mt-8 flex gap-8">
+              <img
+                src="/gayme.jpeg"
+                alt="me"
+                className="rounded"
+                style={{ width: 350 }}
+              />
+              <p>
+                I am a poo, a 28 year old poo.
+                <br />
+                An old poo you might say or a young poo.
+                <br />I like to do what any poo likes to do: long walks on the
+                beach
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <FAQ />
     </div>
   );
