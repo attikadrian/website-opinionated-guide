@@ -124,11 +124,11 @@ const Buy = () => {
                 About the author
               </h2>
             </div>
-            <div className="mt-12 flex gap-8 justify-center">
+            <div className="mt-12 flex gap-8 md:justify-center">
               <img
                 src="/gayme.jpeg"
                 alt="me"
-                className="rounded"
+                className="rounded hidden md:block"
                 style={{ width: 350 }}
               />
               <p style={{ maxWidth: 600 }}>
