@@ -56,12 +56,20 @@ class MyDocument extends Document {
         <meta name="twitter:site" content="@NikkitaFTW" />
         <meta name="twitter:creator" content="@NikkitaFTW" />
         <meta name="twitter:title" content="Opinionated Guide to React" />
+
         <meta
           name="twitter:image"
           content="https://launch.opinionatedreact.com/twitter.png"
         />
         <meta
           name="twitter:description"
+          content="This book is my personal map of the tips, power-ups and
+          not-so-obvious solutions to common questions and problems that
+          I've come across during 4 year of React development."
+        />
+        <meta property="og:title" content="Opinionated Guide to React" />
+        <meta
+          property="og:description"
           content="This book is my personal map of the tips, power-ups and
           not-so-obvious solutions to common questions and problems that
           I've come across during 4 year of React development."
