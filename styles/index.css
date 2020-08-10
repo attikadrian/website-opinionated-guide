@@ -37,6 +37,7 @@ img {
 
   .hero svg {
     margin-bottom: 40px;
+    max-height: 60vh;
   }
 }
 

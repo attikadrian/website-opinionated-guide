@@ -6,7 +6,7 @@ const Footer = () => (
       <div class="flex justify-center md:order-2">
         <a
           href="http://twitter.com/NikkitaFTW"
-          class="ml-6 text-gray-400 hover:text-gray-500"
+          class="ml-6 text-gray-500 hover:text-gray-500"
         >
           <span class="sr-only">Twitter</span>
           <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -15,7 +15,7 @@ const Footer = () => (
         </a>
         <a
           href="https://github.com/SaraVieira"
-          class="ml-6 text-gray-400 hover:text-gray-500"
+          class="ml-6 text-gray-500 hover:text-gray-500"
         >
           <span class="sr-only">GitHub</span>
           <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -28,11 +28,11 @@ const Footer = () => (
         </a>
       </div>
       <div class="mt-8 md:mt-0 md:order-1 flex">
-        <p class="text-center text-base leading-6 text-gray-400">
+        <p class="text-center text-base leading-6 text-gray-500">
           &copy; {new Date().getFullYear()} Sara Andreia Vieira
         </p>
         <Link href="/legal">
-          <a className="ml-4 text-base text-gray-400 underline">Legal</a>
+          <a className="ml-4 text-base text-gray-500 underline">Legal</a>
         </Link>
       </div>
     </div>

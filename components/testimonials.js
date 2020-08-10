@@ -68,7 +68,7 @@ const Testimonials = () => (
                       <path d="M11 0h3L9 20H6l5-20z" />
                     </svg>
 
-                    <div class="text-base leading-6 font-medium text-gray-500">
+                    <div class="text-base leading-6 font-medium text-gray-400">
                       {testimonial.job}
                     </div>
                   </div>
