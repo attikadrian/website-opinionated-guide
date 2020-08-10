@@ -55,17 +55,24 @@ class MyDocument extends Document {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@NikkitaFTW" />
         <meta name="twitter:creator" content="@NikkitaFTW" />
+        <meta name="twitter:title" content="Opinionated Guide to React" />
         <meta
-          name="twitter:image:src"
+          name="twitter:image"
           content="https://launch.opinionatedreact.com/twitter.png"
         />
         <meta
-          name="og:image"
+          name="twitter:description"
+          content="This book is my personal map of the tips, power-ups and
+          not-so-obvious solutions to common questions and problems that
+          I've come across during 4 year of React development."
+        />
+        <meta
+          property="og:image"
           content="https://launch.opinionatedreact.com/fb.png"
         />
-        <meta name="og:url" content="https://opinionatedreact.com/" />
-        <meta name="og:site_name" content="Opinionated Guide to React" />
-        <meta name="og:type" content="website"></meta>
+        <meta property="og:url" content="https://opinionatedreact.com/" />
+        <meta property="og:site_name" content="Opinionated Guide to React" />
+        <meta property="og:type" content="website"></meta>
         <body>
           <Main />
           <NextScript />
