@@ -1,16 +1,16 @@
 const chapters = [
-  {
-    name: "The Book",
-    desc: "What is this I am reading? What will it teach me?",
-  },
-  {
-    name: "About the author",
-    desc: "Sara? Who?",
-  },
-  {
-    name: "What will you learn?",
-    desc: "Let's get all the cards in the table",
-  },
+  // {
+  //   name: "The Book",
+  //   desc: "What is this I am reading? What will it teach me?",
+  // },
+  // {
+  //   name: "About the author",
+  //   desc: "Sara? Who?",
+  // },
+  // {
+  //   name: "What will you learn?",
+  //   desc: "Let's get all the cards in the table",
+  // },
   {
     name: "Folder/ File Structuring",
     desc:
