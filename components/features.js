@@ -78,12 +78,14 @@ const Features = () => (
           </div>
           <div class="mt-5">
             <h5 class="text-lg leading-6 font-medium text-white">
-              Transfers are instant
+              Automatic updates of new versions included
             </h5>
             <p class="mt-2 text-base leading-6 text-gray-400">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              impedit perferendis suscipit eaque, iste dolor cupiditate
-              blanditiis ratione.
+              Modern frontend web development amirite? As the React ecosystem
+              keeps evolving, so will this book. You will receive the new
+              version every time a new level of the React game is added and new
+              helpful add-ons are built for them. I'll find the cheat codes and
+              share them with you.
             </p>
           </div>
         </div>
