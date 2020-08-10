@@ -12,10 +12,10 @@ const Buy = () => {
       <div className="pt-12 sm:pt-16 lg:pt-24">
         <div className="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto lg:max-w-none">
-            <h2 className="mt-2 text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
+            <h2 className="mt-2 text-3xl leading-9 font-extrabold text-brandGreen sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none pb-4">
               Pricing
             </h2>
-            <p className="mt-2 text-xl leading-7 text-gray-300">
+            <p className="mt-4 text-xl leading-7 text-gray-300">
               Rent is expensive in a major city and the berlin winters are
               pretty harsh.
             </p>
@@ -124,14 +124,14 @@ const Buy = () => {
                 About the author
               </h2>
             </div>
-            <div className="mt-12 flex gap-8 md:justify-center">
+            <div className="mt-12 flex gap-8 md:justify-center items-start">
               <img
                 src="/gayme.jpeg"
-                alt="me"
+                alt="Sara Vieira"
                 className="rounded hidden md:block"
                 style={{ width: 350 }}
               />
-              <p style={{ maxWidth: 600 }}>
+              <p style={{ maxWidth: 600, fontSize: 17 }}>
                 Sara Vieira is a developer at CodeSandbox. GraphQL an OpenSource
                 enthusiast by day, football aficionado at night. Her experience
                 and cat-like curiosity have taken her to build stuff with all

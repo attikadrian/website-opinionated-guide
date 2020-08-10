@@ -85,11 +85,11 @@ const Chapters = () => {
     <section class="text-white body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+          <h2 class="mt-2 text-3xl leading-9 font-extrabold text-brandGreen sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none pb-4">
             Chapters
-          </h1>
+          </h2>
 
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          <p class="mt-4 text-xl leading-7 text-gray-300">
             There are 11 chapters and many smaller subchapters in this book.
             Let's talk about them
           </p>
@@ -110,7 +110,7 @@ const Chapters = () => {
         </div>
         <a
           href="/useRef.pdf"
-          className="mt-8 text-center block flex items-center justify-center text-indigo-500"
+          className="mt-8 text-center block flex items-center justify-center text-white underline"
         >
           <svg
             className="fill-current"

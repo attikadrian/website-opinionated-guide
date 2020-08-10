@@ -22,10 +22,10 @@ const testimonials = [
 const Testimonials = () => (
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+      <h2 class="mt-2 text-3xl leading-9 font-extrabold text-brandGreen sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none pb-4">
         Testimonials
-      </h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-white">
+      </h2>
+      <p class="mt-4 text-xl leading-7 text-gray-300">
         Some people read the book and did not mind being on the website as
         marketing!
       </p>
@@ -36,7 +36,7 @@ const Testimonials = () => (
           <div class="relative">
             <blockquote class="mt-8">
               <div
-                class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-50"
+                class="max-w-3xl mx-auto text-center text-lg leading-8 text-gray-50"
                 dangerouslySetInnerHTML={{ __html: testimonial.text }}
               ></div>
               <footer class="mt-8">

@@ -9,17 +9,12 @@ const Features = () => (
               height={24}
               x={0}
               y={0}
-              enableBackground="new 0 0 512 512"
-              viewBox="0 0 512 512"
+              data-name="Layer 1"
+              viewBox="0 0 100 100"
+              fill="currentcolor"
             >
-              <path
-                fill="currentcolor"
-                d="M383.9 23.8c-2-2-4.5-3.2-7.3-3.4l-2.1-.3c-.4 0-.8-.1-1.2-.1H202c-23.2 0-42 18.9-42 42.1V91H85c-23.2 0-42 19.2-42 42.3v316.6c0 23.2 18.8 42.1 42 42.1h225c23.2 0 42-18.9 42-42.1V421h75c23.2 0 42-19.2 42-42.3v-265c0-3.2-1.3-6.2-3.5-8.5l-81.6-81.4zM387 61l41.2 41H387V61zm-77 407H85c-9.9 0-18-8.2-18-18.1V133.3c0-9.9 8.1-18.3 18-18.3h161v70.1c0 6.6 5.6 11.9 12.2 11.9H328v252.9c0 9.9-8.1 18.1-18 18.1zm-40-335.8l41.2 40.8H270v-40.8zM427 397h-75V184.9c0-3.2-1.3-6.2-3.5-8.5L266.9 95c-2-2-4.5-3.2-7.3-3.4l-2.1-.4c-.4 0-.8-.2-1.2-.2H184V62.1c0-9.9 8.1-18.1 18-18.1h161v69.9c0 6.6 5.6 12.1 12.2 12.1H445v252.7c0 9.9-8.1 18.3-18 18.3z"
-              />
-              <path
-                fill="currentcolor"
-                d="M125.9 298h51.8c6.6 0 12-5.4 12-12s-5.4-12-12-12h-51.8c-6.6 0-12 5.4-12 12s5.3 12 12 12zM269.1 355H125.9c-6.6 0-12 5.4-12 12s5.4 12 12 12h143.2c6.6 0 12-5.4 12-12s-5.4-12-12-12z"
-              />
+              <path d="M34 70a4 4 0 001.27-.21l24-8a4 4 0 002.52-2.53l8-24a4 4 0 00-5.06-5.06l-24 8a4 4 0 00-2.52 2.53l-8 24A4 4 0 0034 70zm11.16-24.84l14.52-4.84-4.84 14.52-14.52 4.84z" />
+              <path d="M50 98a48 48 0 10-33.94-14A47.85 47.85 0 0050 98zM21.71 21.72a40 40 0 110 56.56 39.89 39.89 0 010-56.56z" />
             </svg>
           </div>
           <div class="mt-5">
@@ -29,7 +24,8 @@ const Features = () => (
             <p class="mt-2 text-base leading-6 text-gray-400">
               This book is my personal map of the tips, power-ups and
               not-so-obvious solutions to common questions and problems that
-              I've come across during 4 year of React development.
+              I've come across during 4 year of React development. I have been
+              finding some of the cheat codes and share them with you.
             </p>
           </div>
         </div>
@@ -63,17 +59,15 @@ const Features = () => (
         <div class="mt-10 lg:mt-0">
           <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
             <svg
-              class="h-6 w-6"
-              stroke="currentColor"
-              fill="none"
-              viewBox="0 0 24 24"
+              width={24}
+              height={24}
+              x={0}
+              y={0}
+              data-name="Layer 1"
+              viewBox="0 0 100 100"
+              fill="currentcolor"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M13 10V3L4 14h7v7l9-11h-7z"
-              />
+              <path d="M80.84 81.139H19.16a6.439 6.439 0 01.05-12.878h61.58a6.439 6.439 0 01.05 12.878zM60.82 84.18a10.82 10.82 0 01-21.64 0M73.337 36.498c0-9.506-7.22-17.51-17.055-19.946a7.011 7.011 0 001.44-4.238 7.733 7.733 0 00-15.444 0 7.011 7.011 0 001.44 4.238c-9.836 2.435-17.055 10.44-17.055 19.946 0 24.377-3.907 25.84-6.856 28.723h60.387c-2.95-2.883-6.857-4.346-6.857-28.723zM50 14.972a2.887 2.887 0 01-3.065-2.658 3.096 3.096 0 016.13 0A2.887 2.887 0 0150 14.972z" />
             </svg>
           </div>
           <div class="mt-5">
@@ -84,8 +78,7 @@ const Features = () => (
               Modern frontend web development amirite? As the React ecosystem
               keeps evolving, so will this book. You will receive the new
               version every time a new level of the React game is added and new
-              helpful add-ons are built for them. I'll find the cheat codes and
-              share them with you.
+              helpful add-ons are built for them.
             </p>
           </div>
         </div>

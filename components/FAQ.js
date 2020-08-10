@@ -39,9 +39,9 @@ const data = [
 const FAQ = () => {
   return (
     <div className="bg-gray-50">
-      <div className="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6 lg:pt-20 lg:pb-28 lg:px-8">
+      <div className="max-w-screen-xl mx-auto pt-12 pb-16 sm:pt-16 sm:pb-20 px-4 sm:px-6 lg:pt-40 lg:pb-28 lg:px-8">
         <h2 className="text-3xl leading-9 font-extrabold text-gray-900">
-          Frequently asked questions
+          Frequently Asked Questions
         </h2>
         <div className="mt-6 border-t-2 border-gray-100 pt-10">
           <dl className="md:grid md:grid-cols-2 md:gap-8">
