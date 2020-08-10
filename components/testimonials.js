@@ -20,55 +20,58 @@ const testimonials = [
 ];
 
 const Testimonials = () => (
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full">
-      <h2 class="mt-2 text-3xl leading-9 font-extrabold text-brandGreen sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none pb-4">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="flex flex-col text-center w-full">
+      <h2 className="mt-2 text-3xl leading-9 font-extrabold text-brandGreen sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none pb-4">
         Testimonials
       </h2>
-      <p class="mt-4 text-xl leading-7 text-gray-300">
+      <p className="mt-4 text-xl leading-7 text-gray-300">
         Some people read the book and did not mind being on the website as
         marketing!
       </p>
     </div>
     {testimonials.map((testimonial) => (
-      <section class="py-12 overflow-hidden md:py-20 lg:py-24">
-        <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="relative">
-            <blockquote class="mt-8">
+      <section
+        key={testimonial.name}
+        className="py-12 overflow-hidden md:py-20 lg:py-24"
+      >
+        <div className="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative">
+            <blockquote className="mt-8">
               <div
-                class="max-w-3xl mx-auto text-center text-lg leading-8 text-gray-50"
+                className="max-w-3xl mx-auto text-center text-lg leading-8 text-gray-50"
                 dangerouslySetInnerHTML={{ __html: testimonial.text }}
               ></div>
-              <footer class="mt-8">
-                <div class="md:flex md:items-center md:justify-center">
-                  <div class="md:flex-shrink-0">
+              <footer className="mt-8">
+                <div className="md:flex md:items-center md:justify-center">
+                  <div className="md:flex-shrink-0">
                     <img
-                      class="mx-auto h-10 w-10 rounded-full"
+                      className="mx-auto h-10 w-10 rounded-full"
                       src={testimonial.pic}
                       alt={testimonial.name}
                     />
                   </div>
-                  <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                  <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                     <a
                       className="text-gray-50"
                       href={testimonial.link}
                       target="_blank"
                       rel="noopener norefereer"
                     >
-                      <div class="text-base leading-6 font-medium text-gray-50 ">
+                      <div className="text-base leading-6 font-medium text-gray-50 ">
                         {testimonial.name}
                       </div>
                     </a>
 
                     <svg
-                      class="hidden md:block mx-1 h-5 w-5 text-indigo-600"
+                      className="hidden md:block mx-1 h-5 w-5 text-indigo-600"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
                       <path d="M11 0h3L9 20H6l5-20z" />
                     </svg>
 
-                    <div class="text-base leading-6 font-medium text-gray-400">
+                    <div className="text-base leading-6 font-medium text-gray-400">
                       {testimonial.job}
                     </div>
                   </div>

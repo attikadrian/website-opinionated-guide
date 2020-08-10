@@ -82,27 +82,27 @@ const chapters = [
 
 const Chapters = () => {
   return (
-    <section class="text-white body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-20">
-          <h2 class="mt-2 text-3xl leading-9 font-extrabold text-brandGreen sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none pb-4">
+    <section className="text-white body-font">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-col text-center w-full mb-20">
+          <h2 className="mt-2 text-3xl leading-9 font-extrabold text-brandGreen sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none pb-4">
             Chapters
           </h2>
 
-          <p class="mt-4 text-xl leading-7 text-gray-300">
+          <p className="mt-4 text-xl leading-7 text-gray-300">
             There are 11 chapters and many smaller subchapters in this book.
             Let's talk about them
           </p>
         </div>
-        <div class="flex flex-wrap -m-2">
+        <div className="flex flex-wrap -m-2">
           {chapters.map((chapter) => (
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
-                <div class="flex-grow">
-                  <h2 class="text-white title-font font-medium">
+            <div key={chapter.name} className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                <div className="flex-grow">
+                  <h2 className="text-white title-font font-medium">
                     {chapter.name}
                   </h2>
-                  <p class="text-gray-400">{chapter.desc}</p>
+                  <p className="text-gray-400">{chapter.desc}</p>
                 </div>
               </div>
             </div>

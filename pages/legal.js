@@ -3,12 +3,12 @@ import Footer from "../components/footer";
 export default () => {
   return (
     <main className="text-gray-400 max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8 my-20">
-      <div class="container px-5 py-24 mx-auto leading-normal">
-        <div class="flex flex-col text-center w-full mb-6">
-          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+      <div className="container px-5 py-24 mx-auto leading-normal">
+        <div className="flex flex-col text-center w-full mb-6">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
             Legal Information
           </h1>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-white">
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-white">
             This page is required by German law. It's only available in German
             but basically I get your email if you buy the book. <br />
             Please don't show up at my house, k thx

@@ -30,7 +30,10 @@ class MyDocument extends Document {
         />
         <meta name="msapplication-TileColor" content="#100613" />
         <meta name="theme-color" content="#100613" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
         <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
         <script
           async
@@ -43,13 +46,13 @@ class MyDocument extends Document {
           not-so-obvious solutions to common questions and problems that
           I've come across during 4 year of React development."
         />
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta
           name="image"
           content="https://launch.opinionatedreact.com/fb.png"
         />
         <meta
-          itemprop="image"
+          itemProp="image"
           content="https://launch.opinionatedreact.com/fb.png"
         />
         <meta name="twitter:card" content="summary" />
