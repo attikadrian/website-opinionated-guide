@@ -43,6 +43,29 @@ class MyDocument extends Document {
           not-so-obvious solutions to common questions and problems that
           I've come across during 4 year of React development."
         />
+        <meta charset="utf-8" />
+        <meta
+          name="image"
+          content="https://launch.opinionatedreact.com/fb.png"
+        />
+        <meta
+          itemprop="image"
+          content="https://launch.opinionatedreact.com/fb.png"
+        />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@NikkitaFTW" />
+        <meta name="twitter:creator" content="@NikkitaFTW" />
+        <meta
+          name="twitter:image:src"
+          content="https://launch.opinionatedreact.com/twitter.png"
+        />
+        <meta
+          name="og:image"
+          content="https://launch.opinionatedreact.com/fb.png"
+        />
+        <meta name="og:url" content="https://opinionatedreact.com/" />
+        <meta name="og:site_name" content="Opinionated Guide to React" />
+        <meta name="og:type" content="website"></meta>
         <body>
           <Main />
           <NextScript />
