@@ -2,18 +2,18 @@ const data = [
   {
     question: "Who designed the cover?",
     answer: `The cover was designed by the amazingly talented 
-    <a className="underline" href="https://dribbble.com/NataliaBalska">
+    <a class="underline" href="https://dribbble.com/NataliaBalska">
       Natalia Balska
     </a>
     .`,
   },
   {
     question: "What is the code font in the book?",
-    answer: `The font is <a className="underline" href="https://monolisa.dev">MonoLisa</a>`,
+    answer: `The font is <a class="underline" href="https://monolisa.dev">MonoLisa</a>`,
   },
   {
     question: " Can I get a discount if I am student?",
-    answer: `Sure! Please fill in <a  className="underline" href="https://docs.google.com/forms/d/e/1FAIpQLSfT8XLlLVWclAYXFxEbGF2Ap5JJaqjY2eWz-L6QqlY7WVRpRQ/viewform?usp=sf_link">this form</a> and I will get back to you.`,
+    answer: `Sure! Please fill in <a  class="underline" href="https://docs.google.com/forms/d/e/1FAIpQLSfT8XLlLVWclAYXFxEbGF2Ap5JJaqjY2eWz-L6QqlY7WVRpRQ/viewform?usp=sf_link">this form</a> and I will get back to you.`,
   },
   {
     question: " Can I get VAT discounted?",
@@ -24,14 +24,14 @@ const data = [
   {
     question: "What if I hate it?",
     answer: `Oh no, I will definitely give you a refund, email me at
-  <a className="underline" href="mailto:sara@opinionatedreact.com ">
+  <a class="underline" href="mailto:sara@opinionatedreact.com ">
     sara@opinionatedreact.com
   </a>
   .`,
   },
   {
     question: " I have another question!",
-    answer: `Sure! Email me at <a className="underline" href="mailto:sara@opinionatedreact.com
+    answer: `Sure! Email me at <a class="underline" href="mailto:sara@opinionatedreact.com
     ">sara@opinionatedreact.com</a> and let's talk about it.`,
   },
 ];

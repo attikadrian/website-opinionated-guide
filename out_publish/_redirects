@@ -1,0 +1,5 @@
+# Next-on-Netlify Redirects
+/index  /.netlify/functions/next_index  200
+/  /.netlify/functions/next_index  200
+/legal  /legal.html  200
+/404  /404.html  200

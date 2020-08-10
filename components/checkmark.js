@@ -1,7 +1,7 @@
 const CheckMark = () => {
   return (
     <svg
-      className="h-6 w-6 text-green-500"
+      className="h-6 w-6 text-brandGreen"
       stroke="currentColor"
       fill="none"
       viewBox="0 0 24 24"
