@@ -39,7 +39,7 @@ export default () => {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-white">
             Paddle will email you a link to the product when you buy it and that
             link will always be updated. If you can't find it please provide
-            your email that was used to buy.
+            your email that was used to buy the buy.
           </p>
         </div>
         <form onSubmit={getLinks} className="flex items-end justify-center">

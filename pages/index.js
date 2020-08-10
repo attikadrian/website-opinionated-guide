@@ -6,6 +6,7 @@ import Name from "../components/text";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Chapters from "../components/chapters";
+import WhoFor from "../components/whoFor";
 import Banner from "../components/banner";
 import prices from "../components/data/prices.json";
 import Buy from "../components/buy";
@@ -69,6 +70,7 @@ export default function Index({ discount, country }) {
       </div>
       <Features />
       <Chapters />
+      <WhoFor />
       <Testimonials />
       <Buy />
       <Footer />
