@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Footer = () => (
+const Footer = ({ notHome }) => (
   <div className="bg-gray-50">
     <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
       <div className="flex justify-center md:order-2">
@@ -31,8 +31,18 @@ const Footer = () => (
         <p className="text-center text-base leading-6 text-gray-500">
           &copy; {new Date().getFullYear()} Sara Andreia Vieira
         </p>
+        {notHome ? (
+          <Link href="/">
+            <a className="ml-4 text-base text-gray-500 underline">Home</a>
+          </Link>
+        ) : null}
         <Link href="/legal">
           <a className="ml-4 text-base text-gray-500 underline">Legal</a>
+        </Link>
+        <Link href="/recover">
+          <a className="ml-4 text-base text-gray-500 underline">
+            Recover Past Purchase
+          </a>
         </Link>
       </div>
     </div>

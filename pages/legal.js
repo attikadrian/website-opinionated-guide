@@ -2,8 +2,13 @@ import Footer from "../components/footer";
 
 export default () => {
   return (
-    <main className="text-gray-400 max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8 my-20">
-      <div className="container px-5 py-24 mx-auto leading-normal">
+    <main className="text-gray-400">
+      <div
+        className="container px-5 py-24 mx-auto leading-normal mt-20"
+        style={{
+          width: "100vw",
+        }}
+      >
         <div className="flex flex-col text-center w-full mb-6">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
             Legal Information
@@ -146,7 +151,7 @@ export default () => {
         </p>
       </div>
 
-      <Footer />
+      <Footer notHome />
     </main>
   );
 };
