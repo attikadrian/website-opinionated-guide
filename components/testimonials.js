@@ -1,5 +1,14 @@
 const testimonials = [
   {
+    name: "Dan Abramov",
+    text:
+      "Sara's book is amazing in its head-first approach to the React ecosystem. If you're suffering from analysis paralysis between many options, I think it's a great starting point. In the end, even if you might end up disagreeing with some of Sara's opinionated picks and replace them with something else, that's the point — the goal of this book is to help you break through the mental block of starting a project.",
+    link: "https://twitter.com/dan_abramov",
+    job: "Software developer, Facebook",
+    pic:
+      "https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg",
+  },
+  {
     name: "Tomasz Łakomy",
     text: `
     "Every React app consists of answers for tens of questions: "what do we use for state management? Styles? Fetching data? Animation? Cache? Testing? What are we even doing?".
@@ -29,6 +38,14 @@ Get this book if you want something to refer back to again and again. Cannot rec
     job: "Developer, CodeSandbox",
     pic:
       "https://pbs.twimg.com/profile_images/1268900195544248322/U4lnYGdi_400x400.jpg",
+  },
+  {
+    name: "Monica Lent",
+    text:
+      "There's a lot of hype and noise in the JavaScript and React ecosystems. Sara is one of the few people I turn to for her experience and recommendations when it comes to libraries and tooling. For anyone who wants to cut through the hype and select a coherent tech stack based on real-world experience, picking up Opinionated React is a no-brainer.",
+    link: "https://monicalent.com/",
+    job: "",
+    pic: "https://monicalent.com/images/my-face-square.jpg",
   },
 ];
 
