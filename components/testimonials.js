@@ -4,7 +4,7 @@ const testimonials = [
     text:
       "Sara's book is amazing in its head-first approach to the React ecosystem. If you're suffering from analysis paralysis between many options, I think it's a great starting point. In the end, even if you might end up disagreeing with some of Sara's opinionated picks and replace them with something else, that's the point — the goal of this book is to help you break through the mental block of starting a project.",
     link: "https://twitter.com/dan_abramov",
-    job: "Software developer, Facebook",
+    job: "Developer",
     pic:
       "https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg",
   },
