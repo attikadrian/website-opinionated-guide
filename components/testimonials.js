@@ -44,7 +44,7 @@ Get this book if you want something to refer back to again and again. Cannot rec
     text:
       "There's a lot of hype and noise in the JavaScript and React ecosystems. Sara is one of the few people I turn to for her experience and recommendations when it comes to libraries and tooling. For anyone who wants to cut through the hype and select a coherent tech stack based on real-world experience, picking up Opinionated React is a no-brainer.",
     link: "https://monicalent.com/",
-    job: "",
+    job: "Software Engineer and Founder",
     pic: "https://monicalent.com/images/my-face-square.jpg",
   },
 ];
