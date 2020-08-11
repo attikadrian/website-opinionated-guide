@@ -40,6 +40,7 @@ class MyDocument extends Document {
           data-uid="c358896839"
           src="https://colossal-artist-8004.ck.page/c358896839/index.js"
         ></script>
+        <script async defer src="https://cdn.coollabs.io/cool.js"></script>
         <meta
           name="description"
           content="This book is my personal map of the tips, power-ups and

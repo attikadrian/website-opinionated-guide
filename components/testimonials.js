@@ -17,6 +17,19 @@ const testimonials = [
     pic:
       "https://pbs.twimg.com/profile_images/1251913970660843520/hyH5ML2H_400x400.jpg",
   },
+  {
+    name: "Tomasz Łakomy",
+    text: `
+    "The React ecosystem is an actual <b>jungle</b>! There are so many opinions, libraries, "thought leaders" and <b>conflicting best practices</b><br/><br/>
+<b>Sara is one of the people who's opinion I want to actively listen to.</b> (and I really do, at work, not because i'm forced to but because i want to :P)<br/><br/>
+In the book, Sara walks through folder structure, deployments, package recommendations for state management, animations, etc. and her hot takes on typescript.
+<br/><br/>
+Get this book if you want something to refer back to again and again. Cannot recommend enough! `,
+    link: "https://twitter.com/siddharthkp",
+    job: "Developer, CodeSandbox",
+    pic:
+      "https://pbs.twimg.com/profile_images/1268900195544248322/U4lnYGdi_400x400.jpg",
+  },
 ];
 
 const Testimonials = () => (
