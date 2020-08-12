@@ -18,7 +18,7 @@ const WhoIsItFor = () => {
             advanced diffing algorithm. <br />
             <br />
             The target audience isn't really about experience in this book, I
-            wrote this for anyone who sometimes feel like they need a map to
+            wrote this for anyone who sometimes feels like they need a map to
             navigate through the React world.
             <br />
             <br />
@@ -29,9 +29,9 @@ const WhoIsItFor = () => {
             <br />
             <br />
             There will be opinions you don't agree, and that's okay we are all
-            different and we all build things differently. What I want you to
+            different, and we all build things differently. What I want you to
             get out of this book is a way to find possible paths, make sense of
-            the tools, concepts and packages you come across while building
+            the tools, concepts, and packages you come across while building
             things with React, and to help making you feel confident enough to
             do a project from start to end or to speak up in a company meeting
             with your idea.
