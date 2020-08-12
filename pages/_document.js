@@ -56,7 +56,7 @@ class MyDocument extends Document {
           itemProp="image"
           content="https://launch.opinionatedreact.com/fb.png"
         />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@NikkitaFTW" />
         <meta name="twitter:creator" content="@NikkitaFTW" />
         <meta name="twitter:title" content="Opinionated Guide to React" />
