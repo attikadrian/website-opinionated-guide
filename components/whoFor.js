@@ -15,23 +15,24 @@ const WhoIsItFor = () => {
           <p style={{ "max-width": 600, fontSize: 17 }}>
             I want to start by saying that this book will <b>not</b> teach you
             how to use React from scratch, and it also won't teach you some
-            advanced diffing algorithm. <br />
+            advanced diffing algorithm.
+            <br />
             <br />
             The target audience isn't really about experience in this book, I
             wrote this for anyone who sometimes feels like they need a map to
-            navigate through the React world.
+            navigate the React world.
             <br />
             <br />
             I will share my knowledge and things that I have used through all my
-            years of React, my opinions on several packages and also ways of
-            making things, I will share what helped me so that it can hopefully,
-            help you.
+            years of React, my opinions on several packages, and ways of making
+            things, I will share what helped me so that it can hopefully, help
+            you.
             <br />
             <br />
-            There will be opinions you don't agree, and that's okay we are all
-            different, and we all build things differently. What I want you to
-            get out of this book is a way to find possible paths, make sense of
-            the tools, concepts, and packages you come across while building
+            There will be opinions you don't agree with, and that's okay. We are
+            all different, and we all build things differently. What I want you
+            to get out of this book is a way to find possible paths, make sense
+            of the tools, concepts, and packages you come across while building
             things with React, and to help making you feel confident enough to
             do a project from start to end or to speak up in a company meeting
             with your idea.
