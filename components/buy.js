@@ -135,7 +135,7 @@ const Buy = () => {
                 style={{ width: 350 }}
               />
               <p style={{ maxWidth: 600, fontSize: 17 }}>
-                Sara Vieira is a developer at CodeSandbox. GraphQL an Open
+                Sara Vieira is a developer at CodeSandbox. GraphQL and Open
                 Source enthusiast by day, football aficionado at night. Her
                 experience and cat-like curiosity have taken her to build stuff
                 with all sorts of frontend technologies that range from PHP and
