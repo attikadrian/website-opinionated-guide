@@ -135,12 +135,12 @@ const Buy = () => {
                 style={{ width: 350 }}
               />
               <p style={{ maxWidth: 600, fontSize: 17 }}>
-                Sara Vieira is a developer at CodeSandbox. GraphQL an OpenSource
-                enthusiast by day, football aficionado at night. Her experience
-                and cat-like curiosity have taken her to build stuff with all
-                sorts of frontend technologies that range from PHP and NodeJS to
-                Vue and Reason, but since 2016, she has focused the majority of
-                her projects in React.
+                Sara Vieira is a developer at CodeSandbox. GraphQL an Open
+                Source enthusiast by day, football aficionado at night. Her
+                experience and cat-like curiosity have taken her to build stuff
+                with all sorts of frontend technologies that range from PHP and
+                NodeJS to Vue and Reason, but since 2016, she has focused the
+                majority of her projects in React.
                 <br />
                 <br />
                 As a self-taught programmer, Sara advocates for the importance
