@@ -39,11 +39,11 @@ const Footer = ({ notHome }) => (
         <Link href="/legal">
           <a className="ml-4 text-base text-gray-500 underline">Legal</a>
         </Link>
-        <Link href="/recover">
+        {/* <Link href="/recover">
           <a className="ml-4 text-base text-gray-500 underline">
             Recover Past Purchase
           </a>
-        </Link>
+        </Link> */}
       </div>
     </div>
   </div>
