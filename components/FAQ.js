@@ -30,6 +30,10 @@ const data = [
   .`,
   },
   {
+    question: "I bought the book on leanpub, do I have to buy it again?",
+    answer: `Nop, before releasing today I updated the latest version to leanpub as well so please login to your account to get it. Thank you for being an early supporter.`,
+  },
+  {
     question: " I have another question!",
     answer: `Sure! Email me at <a class="underline" href="mailto:sara@opinionatedreact.com
     ">sara@opinionatedreact.com</a> and let's talk about it.`,
