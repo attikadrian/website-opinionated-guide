@@ -521,5 +521,14 @@
     "percentageOfUSA": 49,
     "discount": 51
   },
-  { "country": "Nigeria", "countryCode": "NGA", "discount": "80" }
+  { "country": "Nigeria", "countryCode": "NGA", "discount": "80" },
+  {
+    "price": "4.99",
+    "dollars": "4.99",
+    "country": "Ukraine",
+    "countryCode": "UKR",
+    "link": "https://www.spotify.com/br/premium/",
+    "percentageOfUSA": 49,
+    "discount": 51
+  }
 ]
