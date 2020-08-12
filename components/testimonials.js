@@ -33,7 +33,7 @@ const testimonials = [
 <b>Sara is one of the people who's opinion I want to actively listen to.</b> (and I really do, at work, not because i'm forced to but because i want to :P)<br/><br/>
 In the book, Sara walks through folder structure, deployments, package recommendations for state management, animations, etc. and her hot takes on typescript.
 <br/><br/>
-Get this book if you want something to refer back to again and again. Cannot recommend enough! `,
+If you want something to refer back to again and again, this is the book to get! `,
     link: "https://twitter.com/siddharthkp",
     job: "Developer, CodeSandbox",
     pic:
