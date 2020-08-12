@@ -31,7 +31,7 @@ const data = [
   },
   {
     question: "I bought the book on leanpub, do I have to buy it again?",
-    answer: `Nop, before releasing today I updated the latest version to Leanpub as well so please login to your account to get it. Thank you for being an early supporter.`,
+    answer: `Nope, before releasing today I updated the latest version to Leanpub as well so please login to your account to get it. Thank you for being an early supporter.`,
   },
   {
     question: " I have another question!",
