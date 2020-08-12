@@ -59,7 +59,7 @@ const Buy = () => {
                         <CheckMark />
                       </div>
                       <p className="ml-3 text-base leading-6 text-gray-700">
-                        Online book version
+                        PDF + Kindle version downloads and online book version
                       </p>
                     </li>
                   </ul>
