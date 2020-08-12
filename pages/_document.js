@@ -77,11 +77,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://opinionatedreact.com/fb.png"
-          />
-          <meta
-            property="og:image:secure_url"
-            content="https://opinionatedreact.com/fb.png"
+            content="https://opinionatedreact.com/fb.jpg"
           />
           <meta property="og:url" content="https://opinionatedreact.com/" />
           <meta property="og:site_name" content="Opinionated Guide to React" />
