@@ -26,8 +26,11 @@ const Buy = () => {
         <div className="relative">
           <div className="absolute inset-0 h-3/4 bg-gray-900" />
           <div className="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5">
-              <div className="rounded-lg shadow-lg overflow-hidden">
+            <div className="max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-1 lg:gap-5">
+              <div
+                className="rounded-lg shadow-lg overflow-hidden"
+                style={{ maxWidth: 500, margin: "auto" }}
+              >
                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                   <div className="mt-4 flex items-baseline text-6xl leading-none font-extrabold">
                     $30
@@ -66,7 +69,7 @@ const Buy = () => {
                   <Button onClick={openBookCheckout}>Get the book pack</Button>
                 </div>
               </div>
-              <div className="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0">
+              {/* <div className="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0">
                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                   <div className="mt-4 flex items-baseline text-6xl leading-none font-extrabold">
                     $60
@@ -111,8 +114,8 @@ const Buy = () => {
                     </a>
                   </Button>
                 </div>
-              </div>
-            </div>
+              </div>*/}
+            </div>{" "}
           </div>
         </div>
       </div>
